@@ -5,9 +5,9 @@ package grpc_service_config
 
 import (
 	fmt "fmt"
-	proto "github.com/golang/protobuf/proto"
-	duration "github.com/golang/protobuf/ptypes/duration"
-	wrappers "github.com/golang/protobuf/ptypes/wrappers"
+	proto "github.com/sgtsquiggs/protobuf/proto"
+	duration "github.com/sgtsquiggs/protobuf/ptypes/duration"
+	wrappers "github.com/sgtsquiggs/protobuf/ptypes/wrappers"
 	code "google.golang.org/genproto/googleapis/rpc/code"
 	math "math"
 )

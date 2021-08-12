@@ -21,10 +21,10 @@ package testutils
 import (
 	"testing"
 
-	anypb "github.com/golang/protobuf/ptypes/any"
+	"github.com/sgtsquiggs/grpc-go/codes"
+	"github.com/sgtsquiggs/grpc-go/status"
+	anypb "github.com/sgtsquiggs/protobuf/ptypes/any"
 	spb "google.golang.org/genproto/googleapis/rpc/status"
-	"google.golang.org/grpc/codes"
-	"google.golang.org/grpc/status"
 )
 
 var statusErr = status.ErrorProto(&spb.Status{

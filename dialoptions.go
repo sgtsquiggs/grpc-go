@@ -24,17 +24,17 @@ import (
 	"net"
 	"time"
 
-	"google.golang.org/grpc/backoff"
-	"google.golang.org/grpc/balancer"
-	"google.golang.org/grpc/credentials"
-	"google.golang.org/grpc/grpclog"
-	"google.golang.org/grpc/internal"
-	internalbackoff "google.golang.org/grpc/internal/backoff"
-	"google.golang.org/grpc/internal/envconfig"
-	"google.golang.org/grpc/internal/transport"
-	"google.golang.org/grpc/keepalive"
-	"google.golang.org/grpc/resolver"
-	"google.golang.org/grpc/stats"
+	"github.com/sgtsquiggs/grpc-go/backoff"
+	"github.com/sgtsquiggs/grpc-go/balancer"
+	"github.com/sgtsquiggs/grpc-go/credentials"
+	"github.com/sgtsquiggs/grpc-go/grpclog"
+	"github.com/sgtsquiggs/grpc-go/internal"
+	internalbackoff "github.com/sgtsquiggs/grpc-go/internal/backoff"
+	"github.com/sgtsquiggs/grpc-go/internal/envconfig"
+	"github.com/sgtsquiggs/grpc-go/internal/transport"
+	"github.com/sgtsquiggs/grpc-go/keepalive"
+	"github.com/sgtsquiggs/grpc-go/resolver"
+	"github.com/sgtsquiggs/grpc-go/stats"
 )
 
 // dialOptions configure a Dial call. dialOptions are set by the DialOption

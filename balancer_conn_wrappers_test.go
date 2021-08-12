@@ -22,10 +22,10 @@ import (
 	"fmt"
 	"testing"
 
-	"google.golang.org/grpc/balancer"
-	"google.golang.org/grpc/connectivity"
-	"google.golang.org/grpc/resolver"
-	"google.golang.org/grpc/resolver/manual"
+	"github.com/sgtsquiggs/grpc-go/balancer"
+	"github.com/sgtsquiggs/grpc-go/connectivity"
+	"github.com/sgtsquiggs/grpc-go/resolver"
+	"github.com/sgtsquiggs/grpc-go/resolver/manual"
 )
 
 var _ balancer.V2Balancer = &funcBalancer{}

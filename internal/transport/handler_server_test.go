@@ -31,12 +31,12 @@ import (
 	"testing"
 	"time"
 
-	"github.com/golang/protobuf/proto"
-	dpb "github.com/golang/protobuf/ptypes/duration"
+	"github.com/sgtsquiggs/grpc-go/codes"
+	"github.com/sgtsquiggs/grpc-go/metadata"
+	"github.com/sgtsquiggs/grpc-go/status"
+	"github.com/sgtsquiggs/protobuf/proto"
+	dpb "github.com/sgtsquiggs/protobuf/ptypes/duration"
 	epb "google.golang.org/genproto/googleapis/rpc/errdetails"
-	"google.golang.org/grpc/codes"
-	"google.golang.org/grpc/metadata"
-	"google.golang.org/grpc/status"
 )
 
 func TestHandlerTransport_NewServerHandlerTransport(t *testing.T) {

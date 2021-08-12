@@ -22,10 +22,10 @@ import (
 	"errors"
 	"testing"
 
-	"github.com/golang/protobuf/proto"
-	"google.golang.org/grpc/codes"
-	"google.golang.org/grpc/status"
-	"google.golang.org/grpc/test/grpc_testing"
+	"github.com/sgtsquiggs/grpc-go/codes"
+	"github.com/sgtsquiggs/grpc-go/status"
+	"github.com/sgtsquiggs/grpc-go/test/grpc_testing"
+	"github.com/sgtsquiggs/protobuf/proto"
 )
 
 func errWithDetails(t *testing.T, s *status.Status, details ...proto.Message) error {

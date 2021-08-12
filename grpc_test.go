@@ -22,10 +22,10 @@ import (
 	"sync/atomic"
 	"testing"
 
-	"google.golang.org/grpc/internal/grpctest"
-	"google.golang.org/grpc/internal/leakcheck"
+	"github.com/sgtsquiggs/grpc-go/internal/grpctest"
+	"github.com/sgtsquiggs/grpc-go/internal/leakcheck"
 
-	_ "google.golang.org/grpc/grpclog/glogger"
+	_ "github.com/sgtsquiggs/grpc-go/grpclog/glogger"
 )
 
 type s struct{}

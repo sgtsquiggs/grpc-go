@@ -30,24 +30,24 @@ import (
 	"sync/atomic"
 	"time"
 
-	"google.golang.org/grpc/balancer"
-	"google.golang.org/grpc/balancer/base"
-	"google.golang.org/grpc/codes"
-	"google.golang.org/grpc/connectivity"
-	"google.golang.org/grpc/credentials"
-	"google.golang.org/grpc/grpclog"
-	"google.golang.org/grpc/internal/backoff"
-	"google.golang.org/grpc/internal/channelz"
-	"google.golang.org/grpc/internal/grpcsync"
-	"google.golang.org/grpc/internal/transport"
-	"google.golang.org/grpc/keepalive"
-	"google.golang.org/grpc/resolver"
-	"google.golang.org/grpc/serviceconfig"
-	"google.golang.org/grpc/status"
+	"github.com/sgtsquiggs/grpc-go/balancer"
+	"github.com/sgtsquiggs/grpc-go/balancer/base"
+	"github.com/sgtsquiggs/grpc-go/codes"
+	"github.com/sgtsquiggs/grpc-go/connectivity"
+	"github.com/sgtsquiggs/grpc-go/credentials"
+	"github.com/sgtsquiggs/grpc-go/grpclog"
+	"github.com/sgtsquiggs/grpc-go/internal/backoff"
+	"github.com/sgtsquiggs/grpc-go/internal/channelz"
+	"github.com/sgtsquiggs/grpc-go/internal/grpcsync"
+	"github.com/sgtsquiggs/grpc-go/internal/transport"
+	"github.com/sgtsquiggs/grpc-go/keepalive"
+	"github.com/sgtsquiggs/grpc-go/resolver"
+	"github.com/sgtsquiggs/grpc-go/serviceconfig"
+	"github.com/sgtsquiggs/grpc-go/status"
 
-	_ "google.golang.org/grpc/balancer/roundrobin"           // To register roundrobin.
-	_ "google.golang.org/grpc/internal/resolver/dns"         // To register dns resolver.
-	_ "google.golang.org/grpc/internal/resolver/passthrough" // To register passthrough resolver.
+	_ "github.com/sgtsquiggs/grpc-go/balancer/roundrobin"           // To register roundrobin.
+	_ "github.com/sgtsquiggs/grpc-go/internal/resolver/dns"         // To register dns resolver.
+	_ "github.com/sgtsquiggs/grpc-go/internal/resolver/passthrough" // To register passthrough resolver.
 )
 
 const (

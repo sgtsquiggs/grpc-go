@@ -19,8 +19,8 @@
 package testutils
 
 import (
-	"github.com/golang/protobuf/proto"
-	"google.golang.org/grpc/status"
+	"github.com/sgtsquiggs/grpc-go/status"
+	"github.com/sgtsquiggs/protobuf/proto"
 )
 
 // StatusErrEqual returns true iff both err1 and err2 wrap status.Status errors

@@ -24,15 +24,15 @@ import (
 	"fmt"
 	"testing"
 
-	"github.com/golang/protobuf/proto"
-	"github.com/golang/protobuf/ptypes"
-	apb "github.com/golang/protobuf/ptypes/any"
-	dpb "github.com/golang/protobuf/ptypes/duration"
 	"github.com/google/go-cmp/cmp"
+	"github.com/sgtsquiggs/grpc-go/codes"
+	"github.com/sgtsquiggs/protobuf/proto"
+	"github.com/sgtsquiggs/protobuf/ptypes"
+	apb "github.com/sgtsquiggs/protobuf/ptypes/any"
+	dpb "github.com/sgtsquiggs/protobuf/ptypes/duration"
 	cpb "google.golang.org/genproto/googleapis/rpc/code"
 	epb "google.golang.org/genproto/googleapis/rpc/errdetails"
 	spb "google.golang.org/genproto/googleapis/rpc/status"
-	"google.golang.org/grpc/codes"
 )
 
 // errEqual is essentially a copy of testutils.StatusErrEqual(), to avoid a

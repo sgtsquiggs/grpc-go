@@ -31,11 +31,11 @@ import (
 	"strconv"
 	"testing"
 
-	"github.com/golang/protobuf/ptypes"
-	durpb "github.com/golang/protobuf/ptypes/duration"
+	channelzpb "github.com/sgtsquiggs/grpc-go/channelz/grpc_channelz_v1"
+	"github.com/sgtsquiggs/grpc-go/internal/channelz"
+	"github.com/sgtsquiggs/protobuf/ptypes"
+	durpb "github.com/sgtsquiggs/protobuf/ptypes/duration"
 	"golang.org/x/sys/unix"
-	channelzpb "google.golang.org/grpc/channelz/grpc_channelz_v1"
-	"google.golang.org/grpc/internal/channelz"
 )
 
 func init() {

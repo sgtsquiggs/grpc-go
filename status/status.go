@@ -32,11 +32,11 @@ import (
 	"errors"
 	"fmt"
 
-	"github.com/golang/protobuf/proto"
-	"github.com/golang/protobuf/ptypes"
+	"github.com/sgtsquiggs/grpc-go/codes"
+	"github.com/sgtsquiggs/grpc-go/internal"
+	"github.com/sgtsquiggs/protobuf/proto"
+	"github.com/sgtsquiggs/protobuf/ptypes"
 	spb "google.golang.org/genproto/googleapis/rpc/status"
-	"google.golang.org/grpc/codes"
-	"google.golang.org/grpc/internal"
 )
 
 func init() {

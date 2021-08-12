@@ -29,17 +29,17 @@ import (
 	"testing"
 	"time"
 
+	"github.com/sgtsquiggs/grpc-go/backoff"
+	"github.com/sgtsquiggs/grpc-go/connectivity"
+	"github.com/sgtsquiggs/grpc-go/credentials"
+	internalbackoff "github.com/sgtsquiggs/grpc-go/internal/backoff"
+	"github.com/sgtsquiggs/grpc-go/internal/transport"
+	"github.com/sgtsquiggs/grpc-go/keepalive"
+	"github.com/sgtsquiggs/grpc-go/naming"
+	"github.com/sgtsquiggs/grpc-go/resolver"
+	"github.com/sgtsquiggs/grpc-go/resolver/manual"
+	"github.com/sgtsquiggs/grpc-go/testdata"
 	"golang.org/x/net/http2"
-	"google.golang.org/grpc/backoff"
-	"google.golang.org/grpc/connectivity"
-	"google.golang.org/grpc/credentials"
-	internalbackoff "google.golang.org/grpc/internal/backoff"
-	"google.golang.org/grpc/internal/transport"
-	"google.golang.org/grpc/keepalive"
-	"google.golang.org/grpc/naming"
-	"google.golang.org/grpc/resolver"
-	"google.golang.org/grpc/resolver/manual"
-	"google.golang.org/grpc/testdata"
 )
 
 func assertState(wantState connectivity.State, cc *ClientConn) (connectivity.State, bool) {

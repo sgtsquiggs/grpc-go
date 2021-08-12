@@ -27,7 +27,7 @@ import (
 	"testing"
 	"time"
 
-	"google.golang.org/grpc/internal/profiling/buffer"
+	"github.com/sgtsquiggs/grpc-go/internal/profiling/buffer"
 )
 
 func TestProfiling(t *testing.T) {

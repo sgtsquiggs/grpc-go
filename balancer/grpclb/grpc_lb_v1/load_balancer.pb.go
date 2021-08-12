@@ -6,12 +6,12 @@ package grpc_lb_v1
 import (
 	context "context"
 	fmt "fmt"
-	proto "github.com/golang/protobuf/proto"
-	duration "github.com/golang/protobuf/ptypes/duration"
-	timestamp "github.com/golang/protobuf/ptypes/timestamp"
-	grpc "google.golang.org/grpc"
-	codes "google.golang.org/grpc/codes"
-	status "google.golang.org/grpc/status"
+	grpc "github.com/sgtsquiggs/grpc-go"
+	codes "github.com/sgtsquiggs/grpc-go/codes"
+	status "github.com/sgtsquiggs/grpc-go/status"
+	proto "github.com/sgtsquiggs/protobuf/proto"
+	duration "github.com/sgtsquiggs/protobuf/ptypes/duration"
+	timestamp "github.com/sgtsquiggs/protobuf/ptypes/timestamp"
 	math "math"
 )
 
@@ -617,7 +617,7 @@ const _ = grpc.SupportPackageIsVersion4
 
 // LoadBalancerClient is the client API for LoadBalancer service.
 //
-// For semantics around ctx use and closing/ending streaming RPCs, please refer to https://godoc.org/google.golang.org/grpc#ClientConn.NewStream.
+// For semantics around ctx use and closing/ending streaming RPCs, please refer to https://godoc.org/github.com/sgtsquiggs/grpc-go#ClientConn.NewStream.
 type LoadBalancerClient interface {
 	// Bidirectional rpc to get a list of servers.
 	BalanceLoad(ctx context.Context, opts ...grpc.CallOption) (LoadBalancer_BalanceLoadClient, error)

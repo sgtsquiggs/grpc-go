@@ -5,7 +5,7 @@ package grpc_gcp
 
 import (
 	fmt "fmt"
-	proto "github.com/golang/protobuf/proto"
+	proto "github.com/sgtsquiggs/protobuf/proto"
 	math "math"
 )
 

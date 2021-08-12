@@ -21,7 +21,7 @@
 // Package grpclb defines a grpclb balancer.
 //
 // To install grpclb balancer, import this package as:
-//    import _ "google.golang.org/grpc/balancer/grpclb"
+//    import _ "github.com/sgtsquiggs/grpc-go/balancer/grpclb"
 package grpclb
 
 import (
@@ -31,17 +31,17 @@ import (
 	"sync"
 	"time"
 
-	durationpb "github.com/golang/protobuf/ptypes/duration"
-	"google.golang.org/grpc"
-	"google.golang.org/grpc/balancer"
-	lbpb "google.golang.org/grpc/balancer/grpclb/grpc_lb_v1"
-	"google.golang.org/grpc/connectivity"
-	"google.golang.org/grpc/credentials"
-	"google.golang.org/grpc/grpclog"
-	"google.golang.org/grpc/internal"
-	"google.golang.org/grpc/internal/backoff"
-	"google.golang.org/grpc/internal/resolver/dns"
-	"google.golang.org/grpc/resolver"
+	"github.com/sgtsquiggs/grpc-go"
+	"github.com/sgtsquiggs/grpc-go/balancer"
+	lbpb "github.com/sgtsquiggs/grpc-go/balancer/grpclb/grpc_lb_v1"
+	"github.com/sgtsquiggs/grpc-go/connectivity"
+	"github.com/sgtsquiggs/grpc-go/credentials"
+	"github.com/sgtsquiggs/grpc-go/grpclog"
+	"github.com/sgtsquiggs/grpc-go/internal"
+	"github.com/sgtsquiggs/grpc-go/internal/backoff"
+	"github.com/sgtsquiggs/grpc-go/internal/resolver/dns"
+	"github.com/sgtsquiggs/grpc-go/resolver"
+	durationpb "github.com/sgtsquiggs/protobuf/ptypes/duration"
 )
 
 const (

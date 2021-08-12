@@ -38,7 +38,7 @@ if [[ "$1" = "-install" ]]; then
       golang.org/x/tools/cmd/goimports \
       honnef.co/go/tools/cmd/staticcheck \
       github.com/client9/misspell/cmd/misspell \
-      github.com/golang/protobuf/protoc-gen-go
+      github.com/sgtsquiggs/protobuf/protoc-gen-go
     popd
   else
     # Ye olde `go get` incantation.
@@ -49,7 +49,7 @@ if [[ "$1" = "-install" ]]; then
       golang.org/x/tools/cmd/goimports \
       honnef.co/go/tools/cmd/staticcheck \
       github.com/client9/misspell/cmd/misspell \
-      github.com/golang/protobuf/protoc-gen-go
+      github.com/sgtsquiggs/protobuf/protoc-gen-go
   fi
   if [[ -z "${VET_SKIP_PROTO}" ]]; then
     if [[ "${TRAVIS}" = "true" ]]; then
@@ -84,7 +84,7 @@ fi
 git grep -l '"math/rand"' -- "*.go" 2>&1 | (! grep -v '^examples\|^stress\|grpcrand\|wrr_test')
 
 # - Ensure all ptypes proto packages are renamed when importing.
-(! git grep "\(import \|^\s*\)\"github.com/golang/protobuf/ptypes/" -- "*.go")
+(! git grep "\(import \|^\s*\)\"github.com/sgtsquiggs/protobuf/ptypes/" -- "*.go")
 
 # - Check imports that are illegal in appengine (until Go 1.11).
 # TODO: Remove when we drop Go 1.10 support

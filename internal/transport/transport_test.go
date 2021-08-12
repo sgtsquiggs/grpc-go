@@ -34,12 +34,12 @@ import (
 	"testing"
 	"time"
 
+	"github.com/sgtsquiggs/grpc-go/codes"
+	"github.com/sgtsquiggs/grpc-go/internal/leakcheck"
+	"github.com/sgtsquiggs/grpc-go/internal/testutils"
+	"github.com/sgtsquiggs/grpc-go/status"
 	"golang.org/x/net/http2"
 	"golang.org/x/net/http2/hpack"
-	"google.golang.org/grpc/codes"
-	"google.golang.org/grpc/internal/leakcheck"
-	"google.golang.org/grpc/internal/testutils"
-	"google.golang.org/grpc/status"
 )
 
 type server struct {
