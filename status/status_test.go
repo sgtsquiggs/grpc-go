@@ -30,9 +30,9 @@ import (
 	"github.com/sgtsquiggs/protobuf/ptypes"
 	apb "github.com/sgtsquiggs/protobuf/ptypes/any"
 	dpb "github.com/sgtsquiggs/protobuf/ptypes/duration"
-	cpb "google.golang.org/genproto/googleapis/rpc/code"
-	epb "google.golang.org/genproto/googleapis/rpc/errdetails"
-	spb "google.golang.org/genproto/googleapis/rpc/status"
+	cpb "github.com/sgtsquiggs/go-genproto/googleapis/rpc/code"
+	epb "github.com/sgtsquiggs/go-genproto/googleapis/rpc/errdetails"
+	spb "github.com/sgtsquiggs/go-genproto/googleapis/rpc/status"
 )
 
 // errEqual is essentially a copy of testutils.StatusErrEqual(), to avoid a

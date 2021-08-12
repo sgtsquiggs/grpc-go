@@ -37,7 +37,7 @@ import (
 	"github.com/sgtsquiggs/protobuf/proto"
 	"golang.org/x/net/http2"
 	"golang.org/x/net/http2/hpack"
-	spb "google.golang.org/genproto/googleapis/rpc/status"
+	spb "github.com/sgtsquiggs/go-genproto/googleapis/rpc/status"
 )
 
 const (

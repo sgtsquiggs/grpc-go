@@ -34,9 +34,9 @@ import (
 	testpb "github.com/sgtsquiggs/grpc-go/interop/grpc_testing"
 	"github.com/sgtsquiggs/grpc-go/metadata"
 	"github.com/sgtsquiggs/grpc-go/status"
+	"github.com/sgtsquiggs/oauth2"
+	"github.com/sgtsquiggs/oauth2/google"
 	"github.com/sgtsquiggs/protobuf/proto"
-	"golang.org/x/oauth2"
-	"golang.org/x/oauth2/google"
 )
 
 var (

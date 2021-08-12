@@ -26,9 +26,9 @@ import (
 	"sync"
 
 	"github.com/sgtsquiggs/grpc-go/credentials"
-	"golang.org/x/oauth2"
-	"golang.org/x/oauth2/google"
-	"golang.org/x/oauth2/jwt"
+	"github.com/sgtsquiggs/oauth2"
+	"github.com/sgtsquiggs/oauth2/google"
+	"github.com/sgtsquiggs/oauth2/jwt"
 )
 
 // TokenSource supplies PerRPCCredentials from an oauth2.TokenSource.

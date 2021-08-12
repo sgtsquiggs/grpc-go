@@ -24,7 +24,7 @@ import (
 	"github.com/sgtsquiggs/grpc-go/codes"
 	"github.com/sgtsquiggs/grpc-go/status"
 	anypb "github.com/sgtsquiggs/protobuf/ptypes/any"
-	spb "google.golang.org/genproto/googleapis/rpc/status"
+	spb "github.com/sgtsquiggs/go-genproto/googleapis/rpc/status"
 )
 
 var statusErr = status.ErrorProto(&spb.Status{

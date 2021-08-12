@@ -8,7 +8,7 @@ import (
 	proto "github.com/sgtsquiggs/protobuf/proto"
 	duration "github.com/sgtsquiggs/protobuf/ptypes/duration"
 	wrappers "github.com/sgtsquiggs/protobuf/ptypes/wrappers"
-	code "google.golang.org/genproto/googleapis/rpc/code"
+	code "github.com/sgtsquiggs/go-genproto/googleapis/rpc/code"
 	math "math"
 )
 

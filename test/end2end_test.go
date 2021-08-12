@@ -75,7 +75,7 @@ import (
 	anypb "github.com/sgtsquiggs/protobuf/ptypes/any"
 	"golang.org/x/net/http2"
 	"golang.org/x/net/http2/hpack"
-	spb "google.golang.org/genproto/googleapis/rpc/status"
+	spb "github.com/sgtsquiggs/go-genproto/googleapis/rpc/status"
 )
 
 const defaultHealthService = "grpc.health.v1.Health"

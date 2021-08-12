@@ -47,7 +47,7 @@ import (
 	"github.com/sgtsquiggs/grpc-go/stats"
 	"github.com/sgtsquiggs/grpc-go/status"
 	"github.com/sgtsquiggs/grpc-go/tap"
-	spb "google.golang.org/genproto/googleapis/rpc/status"
+	spb "github.com/sgtsquiggs/go-genproto/googleapis/rpc/status"
 )
 
 var (
